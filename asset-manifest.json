@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/ATM-app-demo/static/css/main.ae71cb0a.css",
+    "main.js": "/ATM-app-demo/static/js/main.e80b1f12.js",
+    "static/js/453.113d9faa.chunk.js": "/ATM-app-demo/static/js/453.113d9faa.chunk.js",
+    "static/media/calendar.svg": "/ATM-app-demo/static/media/calendar.7e164032fea10b4aa8827b56d5cd6c30.svg",
+    "static/media/calendarFill.svg": "/ATM-app-demo/static/media/calendarFill.12de86795d23dd7eaf2a82f78074a10f.svg",
+    "index.html": "/ATM-app-demo/index.html",
+    "static/media/cognition.svg": "/ATM-app-demo/static/media/cognition.35db549128ed0029b45a06b385203cfc.svg",
+    "static/media/cognitionFill.svg": "/ATM-app-demo/static/media/cognitionFill.8086adf74cc80fc4bcee56116898bcaf.svg",
+    "static/media/person.svg": "/ATM-app-demo/static/media/person.bc3fb6c7f68e241725e63c6602da1581.svg",
+    "static/media/important.svg": "/ATM-app-demo/static/media/important.978a6b747400807708dbd4237733df3c.svg",
+    "static/media/importantFill.svg": "/ATM-app-demo/static/media/importantFill.510d2fe1d66b17950b5ca9c7ac9ca995.svg",
+    "static/media/history.svg": "/ATM-app-demo/static/media/history.a661912e00bbf20bb752bcefff51e8ae.svg",
+    "static/media/upcoming.svg": "/ATM-app-demo/static/media/upcoming.c567261b839b8237c8cfa6a8cdb3bb0b.svg",
+    "static/media/add.svg": "/ATM-app-demo/static/media/add.c1156484fccb71e2a4985624e689495e.svg",
+    "static/media/contentCopy.svg": "/ATM-app-demo/static/media/contentCopy.661ecd421f1b3e7880f3b0c02350f744.svg",
+    "static/media/refresh.svg": "/ATM-app-demo/static/media/refresh.09b711606dba0160a78099482a034393.svg",
+    "static/media/personFill.svg": "/ATM-app-demo/static/media/personFill.8e1b1cb197910a6c16b3c5c141473be3.svg",
+    "static/media/note.svg": "/ATM-app-demo/static/media/note.5ef84a6da6f54ef6d6a5922bb73ec0ea.svg",
+    "static/media/sortAlpha.svg": "/ATM-app-demo/static/media/sortAlpha.9d0c4cfd3d85fff863915dc0434864c7.svg",
+    "static/media/noteFill.svg": "/ATM-app-demo/static/media/noteFill.24e7ad3cc4250cb16d62d3a55940da7a.svg",
+    "static/media/star.svg": "/ATM-app-demo/static/media/star.46bca7620e2659015c70fb3833f6680c.svg",
+    "static/media/logout.svg": "/ATM-app-demo/static/media/logout.d879791bf7350ef17e7eed660573b97c.svg",
+    "static/media/startFill.svg": "/ATM-app-demo/static/media/startFill.8aac720df11d74fe35f36b71d132a5a7.svg",
+    "static/media/backArrow.svg": "/ATM-app-demo/static/media/backArrow.4468b94c51cfd1c1470cdb15e22e0373.svg",
+    "main.ae71cb0a.css.map": "/ATM-app-demo/static/css/main.ae71cb0a.css.map",
+    "main.e80b1f12.js.map": "/ATM-app-demo/static/js/main.e80b1f12.js.map",
+    "453.113d9faa.chunk.js.map": "/ATM-app-demo/static/js/453.113d9faa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ae71cb0a.css",
+    "static/js/main.e80b1f12.js"
+  ]
+}
