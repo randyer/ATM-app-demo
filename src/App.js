@@ -416,9 +416,9 @@ function App() {
           maxWidth: "420px",
           margin: "0 auto",
           backgroundColor: "#89709E",
-          borderRadius: "10px",
-          border: "1px solid black", // Add border
-          padding: "10px", // Add padding for better appearance
+
+          // border: "1px solid black", // Add border
+          // padding: "10px", // Add padding for better appearance
         }}
       >
         <Router basename="">
@@ -427,10 +427,11 @@ function App() {
             className="App"
             style={{
               maxWidth: "400px",
-              margin: "0 auto",
+              // margin: "0 auto",
+              // maxHeight: "calc(100vh - 28px - 20px)",
               backgroundColor: "black",
-              borderRadius: "10px",
-              border: "1px solid black", // Add border
+              borderRadius: "28px",
+              // border: "1px solid black", // Add border
               padding: "20px", // Add padding for better appearance
             }}
           >
