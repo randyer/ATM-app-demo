@@ -7,6 +7,7 @@ import ClientInfo from "./ClientInfo";
 // components
 import ClientList from "./components/ClientList";
 import ScrollToTop from "./components/ScrollToTop";
+import AddClientModal from "./components/addClientModal";
 
 // css
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
@@ -31,6 +32,10 @@ function App() {
   const [refreshClicked, setRefreshClicked] = useState(false);
   const [sortMethod, setSortMethod] = useState("alphabetical");
   const [showDisclaimer, setShowDisclaimer] = useState(true);
+  const [showModal, setShowModal] = useState(false);
+  const [newClient, setNewClient] = useState();
+  const handleModalClose = () => setShowModal(false);
+  const handleModalShow = () => setShowModal(true);
 
   const handleDisclaimerClose = () => {
     setShowDisclaimer(false);
@@ -100,7 +105,6 @@ function App() {
         needs_review: false,
         waitlisted: false,
       };
-
       // try {
       //   // First, post the new client to the database
       //   const restOperation = await post({
@@ -110,10 +114,8 @@ function App() {
       //       body: { ...newClient },
       //     },
       //   });
-
       //   const { body } = await restOperation.response;
       //   const response = await body.json();
-
       //   if (response) {
       //     // fetchClients(setClients);
       //   }
@@ -239,9 +241,16 @@ function App() {
                         </button>
 
                         <AddButton
-                          onClick={addClient}
+                          onClick={handleModalShow}
                           className="svg-icon"
                         ></AddButton>
+                        <AddClientModal
+                          showModal={showModal}
+                          handleModalClose={handleModalClose}
+                          handleSubmitClient={(newClient) => {
+                            setClients([...clients, newClient]);
+                          }}
+                        />
                         <SignOut
                           // onClick={signOut}
                           className="svg-icon"
