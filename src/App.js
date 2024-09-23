@@ -177,10 +177,10 @@ function App() {
                           </p>
                           <p>
                             This app is designed as a Progressive Web App (PWA)
-                            optimized for mobile devices. Its primary purpose is
-                            to help massage therapists and businesses manage
-                            their clients effectively. The app includes four
-                            main tabs:
+                            for mobile devices. Its primary purpose is to help
+                            massage therapists and businesses manage their
+                            clients effectively. The app includes four main
+                            tabs:
                           </p>
                           <ul>
                             <li>
@@ -216,6 +216,12 @@ function App() {
                               assessment, and plan.
                             </li>
                           </ul>
+                          <p>Adding a client puts them in the waitlist tab.</p>
+                          <p>
+                            To reset the client list, click the refresh button
+                            on the home screen in the top left.
+                          </p>
+
                           <button onClick={handleDisclaimerClose}>
                             I Understand
                           </button>
