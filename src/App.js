@@ -693,7 +693,7 @@ function App() {
           // padding: "10px", // Add padding for better appearance
         }}
       >
-        <Router basename="">
+        <Router basename="/ATM-app-demo">
           <ScrollToTop />
           <div
             className="App"
