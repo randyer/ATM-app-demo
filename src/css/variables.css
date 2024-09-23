@@ -7,6 +7,7 @@
   --purple: #bb86fc;
   --hover-bg: #333333;
   --input-bg: #1e1e1e;
+  --bs-body-bg: black !important;
 }
 
 .fixed {
