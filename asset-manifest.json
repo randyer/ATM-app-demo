@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ATM-app-demo/static/css/main.94fc25b8.css",
+    "main.css": "/ATM-app-demo/static/css/main.8287c2c5.css",
     "main.js": "/ATM-app-demo/static/js/main.22a504b5.js",
     "static/js/453.113d9faa.chunk.js": "/ATM-app-demo/static/js/453.113d9faa.chunk.js",
     "static/media/calendar.svg": "/ATM-app-demo/static/media/calendar.7e164032fea10b4aa8827b56d5cd6c30.svg",
@@ -24,12 +24,12 @@
     "static/media/logout.svg": "/ATM-app-demo/static/media/logout.d879791bf7350ef17e7eed660573b97c.svg",
     "static/media/startFill.svg": "/ATM-app-demo/static/media/startFill.8aac720df11d74fe35f36b71d132a5a7.svg",
     "static/media/backArrow.svg": "/ATM-app-demo/static/media/backArrow.4468b94c51cfd1c1470cdb15e22e0373.svg",
-    "main.94fc25b8.css.map": "/ATM-app-demo/static/css/main.94fc25b8.css.map",
+    "main.8287c2c5.css.map": "/ATM-app-demo/static/css/main.8287c2c5.css.map",
     "main.22a504b5.js.map": "/ATM-app-demo/static/js/main.22a504b5.js.map",
     "453.113d9faa.chunk.js.map": "/ATM-app-demo/static/js/453.113d9faa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.94fc25b8.css",
+    "static/css/main.8287c2c5.css",
     "static/js/main.22a504b5.js"
   ]
 }
