@@ -176,7 +176,7 @@ function App() {
                             purposes only.
                           </p>
                           <p>
-                            This Web App is designed for mobile devices. Its
+                            This web app is designed for mobile devices. Its
                             primary purpose is to help massage therapists and
                             businesses manage their clients effectively. The app
                             includes four main tabs:
