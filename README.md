@@ -2,7 +2,7 @@
   This is a demo. Please note that all of the data presented here is dummy data for demonstration purposes only.
 </p>
 <p>
-  This app is designed as a Progressive Web App (PWA) for mobile devices. Its primary purpose is to help massage therapists and businesses manage their clients effectively. The app includes four main tabs:
+  This web app is designed for mobile devices. Its primary purpose is to help massage therapists and businesses manage their clients effectively. The app includes four main tabs:
 </p>
 <ul>
   <li><strong>Active:</strong> Clients currently being seen.</li>
