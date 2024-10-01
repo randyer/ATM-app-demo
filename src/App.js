@@ -33,9 +33,9 @@ function App() {
   const [sortMethod, setSortMethod] = useState("alphabetical");
   const [showDisclaimer, setShowDisclaimer] = useState(true);
   const [showModal, setShowModal] = useState(false);
-  const [newClient, setNewClient] = useState();
   const handleModalClose = () => setShowModal(false);
   const handleModalShow = () => setShowModal(true);
+  const [newClient, setNewClient] = useState();
 
   const handleDisclaimerClose = () => {
     setShowDisclaimer(false);
@@ -176,11 +176,10 @@ function App() {
                             purposes only.
                           </p>
                           <p>
-                            This app is designed as a Progressive Web App (PWA)
-                            for mobile devices. Its primary purpose is to help
-                            massage therapists and businesses manage their
-                            clients effectively. The app includes four main
-                            tabs:
+                            This Web App is designed for mobile devices. Its
+                            primary purpose is to help massage therapists and
+                            businesses manage their clients effectively. The app
+                            includes four main tabs:
                           </p>
                           <ul>
                             <li>
