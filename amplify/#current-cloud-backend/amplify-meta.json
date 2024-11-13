@@ -1,0 +1,149 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-atmclientapp-dev-afb60-authRole",
+      "UnauthRoleArn": "arn:aws:iam::309907852964:role/amplify-atmclientapp-dev-afb60-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::309907852964:role/amplify-atmclientapp-dev-afb60-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-atmclientapp-dev-afb60-deployment",
+      "UnauthRoleName": "amplify-atmclientapp-dev-afb60-unauthRole",
+      "StackName": "amplify-atmclientapp-dev-afb60",
+      "StackId": "arn:aws:cloudformation:us-east-2:309907852964:stack/amplify-atmclientapp-dev-afb60/b0d3c330-50dc-11ef-88cd-0619fced87c7",
+      "AmplifyAppId": "d3l8z2c1r2gzuq",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-atmclientapp-dev-afb60-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    }
+  },
+  "function": {
+    "clientHandler": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": [],
+      "lastBuildTimeStamp": "2024-10-02T22:04:25.283Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2024-10-02T22:04:25.574Z",
+      "distZipFilename": "clientHandler-4c72454d73686b676149-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-atmclientapp-dev-afb60-deployment",
+        "s3Key": "amplify-builds/clientHandler-4c72454d73686b676149-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-atmclientapp-dev-afb60-deployment/amplify-cfn-templates/function/clientHandler-cloudformation-template.json",
+        "logicalId": "functionclientHandler"
+      },
+      "lastPushTimeStamp": "2024-10-02T22:05:29.517Z",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::309907852964:role/atmclientappLambdaRole30dc4aa4-dev",
+        "Region": "us-east-2",
+        "Arn": "arn:aws:lambda:us-east-2:309907852964:function:clientHandler-dev",
+        "Name": "clientHandler-dev",
+        "LambdaExecutionRole": "atmclientappLambdaRole30dc4aa4-dev"
+      },
+      "lastPushDirHash": "Q+0ip5enzTCnJc5oJpQi8e+e9Lg="
+    },
+    "newPatientFormSubmission": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2024-08-16T15:34:06.419Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2024-08-16T15:34:06.707Z",
+      "distZipFilename": "newPatientFormSubmission-564e4c6f614375756258-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-atmclientapp-dev-afb60-deployment",
+        "s3Key": "amplify-builds/newPatientFormSubmission-564e4c6f614375756258-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-atmclientapp-dev-afb60-deployment/amplify-cfn-templates/function/newPatientFormSubmission-cloudformation-template.json",
+        "logicalId": "functionnewPatientFormSubmission"
+      },
+      "lastPushTimeStamp": "2024-10-02T22:05:28.914Z",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::309907852964:role/atmclientappLambdaRole88ee6027-dev",
+        "Region": "us-east-2",
+        "Arn": "arn:aws:lambda:us-east-2:309907852964:function:newPatientFormSubmission-dev",
+        "Name": "newPatientFormSubmission-dev",
+        "LambdaExecutionRole": "atmclientappLambdaRole88ee6027-dev"
+      },
+      "lastPushDirHash": "Ntacf2uhJ6ebaDVrXQLSI+/7reE="
+    }
+  },
+  "api": {
+    "apiclient": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "newPatientFormSubmission",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        },
+        {
+          "category": "function",
+          "resourceName": "clientHandler",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-atmclientapp-dev-afb60-deployment/amplify-cfn-templates/api/apiclient-cloudformation-template.json",
+        "logicalId": "apiapiclient"
+      },
+      "lastPushTimeStamp": "2024-10-02T22:05:28.918Z",
+      "output": {
+        "ApiName": "apiclient",
+        "RootUrl": "https://3qxxi0kmyd.execute-api.us-east-2.amazonaws.com/dev",
+        "ApiId": "3qxxi0kmyd"
+      },
+      "lastPushDirHash": "xflfWtiblbnrbowDROuTDc/X53E="
+    }
+  },
+  "auth": {
+    "atmclientapp5ff2e639": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-atmclientapp-dev-afb60-deployment/amplify-cfn-templates/auth/atmclientapp5ff2e639-cloudformation-template.json",
+        "logicalId": "authatmclientapp5ff2e639"
+      },
+      "lastPushTimeStamp": "2024-10-02T22:05:28.920Z",
+      "output": {
+        "UserPoolId": "us-east-2_twKfIh08g",
+        "AppClientIDWeb": "3mn19rd2couclnae675qofm5h9",
+        "AppClientID": "4q5qibnbsinuc8ffvoa7bemlji",
+        "IdentityPoolId": "us-east-2:3842aa20-4c8e-4779-a736-6c385a96ba50",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-2:309907852964:userpool/us-east-2_twKfIh08g",
+        "IdentityPoolName": "atmclientapp5ff2e639_identitypool_5ff2e639__dev",
+        "UserPoolName": "atmclientapp5ff2e639_userpool_5ff2e639"
+      },
+      "lastPushDirHash": "seTvWtCb4A7kzmAUyYTcUXhLRzM="
+    }
+  }
+}

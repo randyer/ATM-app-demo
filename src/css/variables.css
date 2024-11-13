@@ -7,7 +7,6 @@
   --purple: #bb86fc;
   --hover-bg: #333333;
   --input-bg: #1e1e1e;
-  /* --bs-body-bg: black !important; */
 }
 
 .fixed {
@@ -38,4 +37,9 @@
 .svg-icon-hidden {
   fill: var(--svg-color);
   opacity: 0;
+}
+
+.dropdown-button {
+  display: flex !important;
+  align-items: center;
 }
