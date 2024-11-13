@@ -12,36 +12,34 @@ function AddClientModal({ showModal, handleModalClose, handleSubmitClient }) {
   }
 
   console.log(generateUUID());
-
   const [newClient, setNewClient] = useState({
-    assessment: "",
-    city: "",
-    current_symptoms: "",
-    dob: "",
+    first_name: "",
+    last_name: "",
+    phone: "",
     email: "",
+    dob: "",
+    street: "",
+    city: "",
+    state: "",
+    zip: "",
     emergency_contact: "",
     emergency_contact_phone: "",
-    favorite: "",
-    first_name: "",
-    form_data: "",
-    general_notes: "",
     heard_about_us: "",
-    id: generateUUID(),
-    last_name: "",
-    last_status_change: "",
-    last_updated: "",
-    needs_review: "",
-    objective: "",
+    current_symptoms: "",
+    past_symptoms: "",
     past_injuries: "",
     past_surgeries: "",
-    past_symptoms: "",
-    phone: "",
+    form_data: "",
+    general_notes: "",
+    objective: "",
+    assessment: "",
     plan: "",
-    state: "",
+    favorite: "",
+    needs_review: "",
     status: "waitlist",
-    street: "",
-    waitlisted: "",
-    zip: "",
+    id: generateUUID(),
+    last_updated: "",
+    last_status_change: "",
   });
 
   const handleInputChange = (e) => {
@@ -136,6 +134,7 @@ function AddClientModal({ showModal, handleModalClose, handleSubmitClient }) {
               name="state"
               value={newClient.state}
               onChange={handleInputChange}
+              maxLength="2"
             />
           </Form.Group>
           <Form.Group>
@@ -171,87 +170,6 @@ function AddClientModal({ showModal, handleModalClose, handleSubmitClient }) {
               type="text"
               name="heard_about_us"
               value={newClient.heard_about_us}
-              onChange={handleInputChange}
-            />
-          </Form.Group>
-          <Form.Group>
-            <Form.Label>Current Symptoms</Form.Label>
-            <Form.Control
-              type="text"
-              name="current_symptoms"
-              value={newClient.current_symptoms}
-              onChange={handleInputChange}
-            />
-          </Form.Group>
-          <Form.Group>
-            <Form.Label>Past Symptoms</Form.Label>
-            <Form.Control
-              type="text"
-              name="past_symptoms"
-              value={newClient.past_symptoms}
-              onChange={handleInputChange}
-            />
-          </Form.Group>
-          <Form.Group>
-            <Form.Label>Past Injuries</Form.Label>
-            <Form.Control
-              type="text"
-              name="past_injuries"
-              value={newClient.past_injuries}
-              onChange={handleInputChange}
-            />
-          </Form.Group>
-          <Form.Group>
-            <Form.Label>Past Surgeries</Form.Label>
-            <Form.Control
-              type="text"
-              name="past_surgeries"
-              value={newClient.past_surgeries}
-              onChange={handleInputChange}
-            />
-          </Form.Group>
-          <Form.Group>
-            <Form.Label>General Notes</Form.Label>
-            <Form.Control
-              as="textarea"
-              name="general_notes"
-              value={newClient.general_notes}
-              onChange={handleInputChange}
-            />
-          </Form.Group>
-          <Form.Group>
-            <Form.Label>Overview</Form.Label>
-            <Form.Control
-              type="text"
-              name="form_data"
-              value={newClient.form_data}
-              onChange={handleInputChange}
-            />
-          </Form.Group>
-          <Form.Group>
-            <Form.Label>Objective</Form.Label>
-            <Form.Control
-              type="text"
-              name="objective"
-              value={newClient.objective}
-              onChange={handleInputChange}
-            />
-          </Form.Group>
-          <Form.Group>
-            <Form.Label>Assessment</Form.Label>
-            <Form.Control
-              type="text"
-              name="assessment"
-              value={newClient.assessment}
-              onChange={handleInputChange}
-            />
-          </Form.Group>
-          <Form.Group>
-            <Form.Label>Plan</Form.Label>
-            <Form.Control
-              type="text"
-              name="plan"
-              value={newClient.plan}
               onChange={handleInputChange}
             />
           </Form.Group>

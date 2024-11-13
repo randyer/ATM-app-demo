@@ -1,8 +1,8 @@
 /* ClientInfo.css */
 
 .client-info-page {
-  /* display:flex; */
-  /* flex-direction: column; */
+  display: flex;
+  flex-direction: column;
   /* align-items: center; */
   /* padding: 1rem; */
   font-family: Arial, sans-serif;
@@ -100,7 +100,7 @@
 }
 
 .soap-notes,
-.appointments {
+.scheduling {
   /* background: var(--input-bg); */
   padding: 1rem;
   border-radius: 5px;
@@ -112,7 +112,7 @@
 
 .client-details p,
 .soap-notes p,
-.appointments ul {
+.scheduling ul {
   margin: 0.5rem;
 }
 
@@ -122,14 +122,17 @@
 }
 
 .soap-notes textarea,
-.general-notes textarea {
-  width: 95%;
-  padding: 0.5rem;
-  font-size: 1rem;
-  border: 1px solid var(--border);
-  border-radius: 5px;
-  background-color: var(--input-bg);
-  color: var(--foreground);
+.general-notes textarea,
+.scheduling textarea {
+  /* flex-grow: 1;  */
+  /* width: 100%;  */
+  /* min-height: 100px; */
+  /* padding: 0.5rem; */
+  /* font-size: 1rem; */
+  /* border: 1px solid var(--border); */
+  /* border-radius: 5px; */
+  /* background-color: var(--input-bg); */
+  /* color: var(--foreground); */
 }
 
 .client-details input {
@@ -148,16 +151,17 @@
   width: 95%;
 }
 
-.soap-notes textarea {
-  height: 16rem;
-}
-
-.appointments ul {
+.scheduling ul {
   list-style-type: none;
   padding: 0;
 }
 
-.appointments li {
+.scheduling li {
   padding: 0.5rem;
   border-bottom: 1px solid var(--border);
+}
+
+.swiper-wrapper {
+  position: absolute !important;
+  bottom: 0;
 }

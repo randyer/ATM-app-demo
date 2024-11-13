@@ -1,9 +1,5 @@
 /* App.css */
 
-body {
-  background-color: black !important;
-}
-
 button {
   all: unset;
 }
@@ -165,6 +161,29 @@ h1 {
   flex: 1;
 }
 
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  display: none !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: white !important;
+}
+
+.swiper-pagination-bullet {
+  background: white !important;
+}
+
+.swiper {
+  width: 100% !important;
+  height: 100% !important;
+}
+
 .disclaimer-popup {
   position: fixed;
   overflow: hidden; /* Avoid auto scroll on the main container */
@@ -182,7 +201,7 @@ h1 {
 }
 
 .disclaimer-popup-content {
-  background-color: rgba(153, 45, 45, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   padding: 20px;
   width: 90vw;
   max-width: 800px;

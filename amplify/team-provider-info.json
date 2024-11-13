@@ -1,0 +1,39 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-atmclientapp-dev-afb60-authRole",
+      "UnauthRoleArn": "arn:aws:iam::309907852964:role/amplify-atmclientapp-dev-afb60-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::309907852964:role/amplify-atmclientapp-dev-afb60-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-atmclientapp-dev-afb60-deployment",
+      "UnauthRoleName": "amplify-atmclientapp-dev-afb60-unauthRole",
+      "StackName": "amplify-atmclientapp-dev-afb60",
+      "StackId": "arn:aws:cloudformation:us-east-2:309907852964:stack/amplify-atmclientapp-dev-afb60/b0d3c330-50dc-11ef-88cd-0619fced87c7",
+      "AmplifyAppId": "d3l8z2c1r2gzuq",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-atmclientapp-dev-afb60-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "function": {
+        "clientHandler": {
+          "deploymentBucketName": "amplify-atmclientapp-dev-afb60-deployment",
+          "s3Key": "amplify-builds/clientHandler-4c72454d73686b676149-build.zip",
+          "dbHost": "db-atm.chiisc2sis13.us-east-2.rds.amazonaws.com",
+          "dbName": "ATM_client_info_db",
+          "dbPassword": "D^SkYz1C0*xTg90z",
+          "dbPort": "5432",
+          "dbUser": "randyer"
+        },
+        "newPatientFormSubmission": {
+          "deploymentBucketName": "amplify-atmclientapp-dev-afb60-deployment",
+          "s3Key": "amplify-builds/newPatientFormSubmission-564e4c6f614375756258-build.zip"
+        }
+      },
+      "api": {
+        "apiclient": {}
+      },
+      "auth": {
+        "atmclientapp5ff2e639": {}
+      }
+    }
+  }
+}
